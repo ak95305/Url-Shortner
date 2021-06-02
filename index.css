@@ -1,0 +1,148 @@
+*{
+	font-family: 'Poppins', sans-serif;
+
+
+}
+
+
+
+nav a, .btn-login{
+	font-weight: 500;
+}
+
+a:hover, .btn-login:hover{
+	text-decoration: none;
+	color: var(--dark) !important;
+}
+
+.pill{
+	border-radius: 2rem;
+	transition: all linear 100ms;
+}
+.btn-info:hover{
+	transition: all linear 100ms;
+	opacity: 0.5;
+}
+
+.stick{
+	width: 2rem;
+	height: 0.3rem;
+	background-color: var(--dark);
+	transform-origin: 3px 3px;
+	transition: all linear 200ms;
+}
+
+.stick2{
+	margin:  0.25rem 0;
+}
+
+
+.active-ham .stick2{
+	visibility: hidden;
+}
+
+.active-ham .stick1{
+	transform: rotate(45deg);
+}
+.active-ham .stick3{
+	transform:  rotate(-45deg);
+}
+.nav-mobile{
+	top: 10%;
+	left: 50%;
+	transform:  translate(-50%);
+	background-color: hsl(257, 27%, 26%);
+	padding: 2rem;
+	border-radius: 1rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 500ms ease-in;
+	display: none;
+	}
+.nav-mobile a{
+	padding: 1rem 0;
+	color: #fff !important;
+}
+.nav-mobile .btn-login{
+	border-top: 2px solid var(--light);
+	margin-top: 0.5rem;
+	border-radius: 0;
+}
+
+.nav-mobile-active{
+	animation: active-nav 500ms ease-in forwards;
+}
+@keyframes active-nav{
+	0%{opacity: 0; visibility: hidden;}
+	1%{opacity: 0; visibility: visible;}
+	100%{opacity: 1; visibility: visible;}
+}
+
+
+
+
+.front-page h1{
+	
+	position: relative;
+	z-index: -1;
+}
+
+.bg-image img{
+	width: 100%;
+
+	position: relative;
+	z-index: -1;
+}
+
+.main{
+	background-color: #eff1f7;
+}
+
+.main  .container{
+	margin-top: 6rem;
+}
+
+.link-bar{
+	background-color: hsl(260, 8%, 14%);
+	border-radius: 0.3rem;
+	background-image: url("./images/bg-shorten-desktop.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	top: -2.5rem;
+}
+
+.link-bar input{
+	border-radius: 0.3rem;
+	border: none;
+}
+
+.stats div{
+	position: relative;
+	height: fit-content;
+}
+
+.icons{
+	background-color:  hsl(260, 8%, 14%);
+	width: fit-content;
+	border-radius: 50%;
+	position: absolute;
+	top: -2.25rem;
+}
+.footer1{
+	background-image: url("./images/bg-boost-desktop.svg");
+	background-color: hsl(257, 27%, 26%);
+}
+
+.list-group-item{
+	border-bottom: 0;
+	background-color: transparent;
+}
+
+.fab{
+	font-size: 2rem;
+}
+.footer2{
+	background-color: hsl(260, 8%, 14%);
+	color: #fff;
+}
